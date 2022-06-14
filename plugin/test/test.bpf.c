@@ -2,6 +2,11 @@
 #include "vmlinux.h"
 #include <bpf/bpf_helpers.h> 
 
+#ifdef asm_inline
+#undef asm_inline
+#define asm_inline asm
+#endif
+
 typedef struct process_info {
     int pid;
     char comm[100];
