@@ -295,7 +295,7 @@ int xdp_dns(struct xdp_md *ctx)
 
     void *data_end = (void *)(unsigned long)ctx->data_end;
     void *data = (void *)(unsigned long)ctx->data;
-    
+    // ??? 有很么意义 ？？？
     //Boundary check: check if packet is larger than a full ethernet + ip header
     if (data + sizeof(struct ethhdr) + sizeof(struct iphdr) > data_end)
     {

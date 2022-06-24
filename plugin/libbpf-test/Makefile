@@ -1,4 +1,4 @@
-APPS = dnscache
+APPS = tcprtt
 bpftool = $(shell which bpftool || ../tools/bpftool)
 LIBBPF_SRC := $(abspath ../libbpf/src)
 LIBBPF_OBJ := /usr/lib64/libbpf.a
@@ -22,4 +22,4 @@ format:
 	VERSION_CONTROL=none indent -linux *.h *.c
 
 clean:
-	rm -rf $(APPS) *.o
+	rm -rf $(APPS)*.o $(APPS)

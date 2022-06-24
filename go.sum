@@ -1,3 +1,7 @@
+github.com/aquasecurity/libbpfgo v0.1.1 h1:j/ipxI/l20lu5Tosn0o9JYj7bD3Cwzi18jIEEu3rMvQ=
+github.com/aquasecurity/libbpfgo v0.1.1/go.mod h1:/+clceXE103FaXvVTIY2HAkQjxNtkra4DRWvZYr2SKw=
+github.com/aquasecurity/libbpfgo v0.2.5-libbpf-0.7.0 h1:BpW7qxkveYXx8TCtvYWIvmliPqaTCz/IYs1i+Gyj0MQ=
+github.com/aquasecurity/libbpfgo v0.2.5-libbpf-0.7.0/go.mod h1:/+clceXE103FaXvVTIY2HAkQjxNtkra4DRWvZYr2SKw=
 github.com/aquasecurity/tracee/libbpfgo v0.0.0-20210518164823-94530727cde4 h1:46arhhxBEYn4SaVliz7bZwVGRrdYUbiVEYNW0kESnnY=
 github.com/aquasecurity/tracee/libbpfgo v0.0.0-20210518164823-94530727cde4/go.mod h1:PgXimFYUSx0PfQFRIyl770Jowy6O3r7iJOr39dt1bss=
 github.com/cilium/ebpf v0.9.0 h1:ldiV+FscPCQ/p3mNEV4O02EPbUZJFsoEtHvIr9xLTvk=
@@ -22,6 +26,7 @@ github.com/vishvananda/netns v0.0.0-20191106174202-0a2b9b5464df h1:OviZH7qLw/7Zo
 github.com/vishvananda/netns v0.0.0-20191106174202-0a2b9b5464df/go.mod h1:JP3t17pCcGlemwknint6hfoeCVQrEMVwxRLRjXpq+BU=
 golang.org/x/sys v0.0.0-20190606203320-7fc4e5ec1444/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210324051608-47abb6519492/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20210514084401-e8d321eab015/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20210906170528-6f6e22806c34 h1:GkvMjFtXUmahfDtashnc1mnrCtuBVcwse5QV2lUk/tI=
 golang.org/x/sys v0.0.0-20210906170528-6f6e22806c34/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
