@@ -3,6 +3,8 @@
         "map_helpers.h": "c",
         "cmath": "c",
         "trace_helpers.h": "c",
-        "bpf_core_read.h": "c"
+        "bpf_core_read.h": "c",
+        "bpf_helpers.h": "c",
+        "bpf_tracing.h": "c"
     }
 }
