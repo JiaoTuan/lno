@@ -1,8 +1,8 @@
-package main
+package tcpdrop
 
-import "C"
 
 import (
+	"C"
 	_"bytes"
 	_"encoding/binary"
 	"fmt"
@@ -12,7 +12,7 @@ import (
 	bpf "github.com/aquasecurity/tracee/libbpfgo"
 )
 
-func main() {
+func tcpDrop() {
 
 	bpfModule, err := bpf.NewModuleFromFile("tcpdrop.bpf.o")
 	if err != nil {

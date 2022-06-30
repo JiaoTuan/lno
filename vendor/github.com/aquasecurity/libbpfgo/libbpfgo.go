@@ -142,7 +142,6 @@ const (
 	PerfEvent
 	Uprobe
 	Uretprobe
-	Tracing
 )
 
 type BPFLink struct {
@@ -791,23 +790,6 @@ func (p *BPFProg) SetTracepoint() error {
 		return fmt.Errorf("failed to set bpf program as tracepoint: %w", syscall.Errno(-errC))
 	}
 	return nil
-}
-
-// AttachGeneric is used to attach the BPF program using autodetection
-// for the attach target. You can specify the destination in BPF code
-// via the SEC() such as `SEC("fentry/some_kernel_func")`
-func (p *BPFProg) AttachGeneric() (*BPFLink, error) {
-	link, errno := C.bpf_program__attach(p.prog)
-	if C.IS_ERR_OR_NULL(unsafe.Pointer(link)) {
-		return nil, fmt.Errorf("failed to attach program: %w", errno)
-	}
-	bpfLink := &BPFLink{
-		link:      link,
-		prog:      p,
-		linkType:  Tracing,
-		eventName: fmt.Sprintf("tracing-%s", p.name),
-	}
-	return bpfLink, nil
 }
 
 func (p *BPFProg) AttachTracepoint(category, name string) (*BPFLink, error) {
